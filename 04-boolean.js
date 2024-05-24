@@ -25,6 +25,8 @@ console.log(Boolean("JavaScript"), Boolean(""));        //  string
 console.log(Boolean(2024), Boolean(0));                 //  number
 
 
+//  Short-Curcuit 선택 기법
+//  front-end 선택적 랜더링
 console.log(true && "Test");    //  Test
 console.log(false && "Test");   //  false
 

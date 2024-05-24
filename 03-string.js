@@ -70,6 +70,6 @@ let temp = 24;
 message = "현재 실내 온도는 " + temp + "도입니다";
 console.log(message);
 
-//  $(변수명) or $(연산식) -> 실행결과가 문자열에 포함됨
+//  ${변수명} or ${연산식} -> 실행결과가 문자열에 포함됨
 message = `현재 실내 온도는 ${temp}도 입니다`;
 console.log(message);

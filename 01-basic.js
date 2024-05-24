@@ -51,4 +51,3 @@ console.log(v, "->", typeof v);
 v = 2024;   console.log(v, "->", typeof v);
 v = 10 > 8; console.log("10 > 8 ?", v, "->", typeof v);
 
-let n1 = 5; let n2 = Number(5); console.log(typeof n1, typeof n2);
