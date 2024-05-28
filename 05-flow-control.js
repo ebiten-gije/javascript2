@@ -47,3 +47,20 @@ for(let a = 1; a <= 5; a++){
 //     console.log(c);
 //     a++;
 // }
+
+//  TODO: for ...in, for ...of
+
+// for ...in: 객체의 속성 키를 반복
+const obj = {
+    name: '홍길동', 
+    age: 28,
+    job: '도적'
+}
+for(let key in obj){
+    console.log(`${key} -> ${obj[key]}`);
+}
+//  for ...of: 배열을 순회
+const arr =[1, 2, 3, 4, 5];
+for(let item of arr){
+    console.log(item);
+}

@@ -1,0 +1,1 @@
+document.write("<p>어서오십시오, " + name + "</p>");

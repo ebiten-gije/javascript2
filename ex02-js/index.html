@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- page script-->
+    <!-- <script>
+        let name = prompt('이름을 입력해주세요오');
+    </script> -->
+
+    <!-- External Script-->
+    <!-- <script src="../ex02-js/script/ask.js"></script> -->
+
+    <script>
+        let newWin;
+        function openWindow(){
+            // window.open("https://www.google.com/");
+            // window.open("https://www.google.com/", "newWin");    //  url, 창이름
+            newWin = window.open("https://www.naver.com/", "newWin",
+                "width=800, height=600");
+        }
+
+        function closeWindow(){
+            if(newWin !== undefined && !newWin.close)
+                newWin.close();
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+
+
+    <h3>window 객체</h3>
+    <ul>
+        <li><a href = "javascript:openWindow();">새 창 열기</a></li>
+        <li><a href = "javascript:closeWindow();">열린 창 닫기</a></li>
+
+        <li>지금 브라우저의 크기는?</li>
+        <!-- <script>
+            document.write("<p>어서오십시오, " + name + "</p>");
+            console.log(name);
+        </script> -->
+        <!-- <script src="../ex02-js/script/print.js"></script> -->
+    </ul>
+</body>
+
+</html>
