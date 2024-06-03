@@ -1,0 +1,19 @@
+#product-info img.selected {
+    width: 225px;
+    height: 265px;
+    float: left;
+    border: 1px solid lightslategrey;
+    margin: 5px;
+}
+
+#product-list li {
+    list-style-type: none;
+    border: 1px solid lightslategrey;
+    margin: 5px;
+    float: left;
+}
+
+#product-list li img {
+    width: 100px;
+    height: 100px;
+}
