@@ -9,8 +9,8 @@
             width: 100px;
         }
     </style>
-    <!-- jQuary -->
-    <script src="./script/jquery-3.7.1.js"></script>
+    <!-- jQuery -->
+    <script src="script/jquery-3.7.1.js"></script>
     <script>
         // 페이지 초기화
         $(document).ready(event => {
@@ -144,10 +144,10 @@
                         dataType: 'json',
                         success: function(response) {
                             console.log(response.movie[0]);
-                            var newWindow = window.open('', 'newWindow', 'width=600, height=400');
+                            let newWindow = window.open('', 'newWindow', 'width=600, height=800');
                             newWindow.document.write(`<h1>${response.movie[0].title}</h1>
                                 <p>감독: ${response.movie[0].director}</p>
-                                <p><img src ="http://localhost:3000/images/${response.movie[0].image}"</p>
+                                <p><img src ="http://localhost:3000/images/${response.movie[0].image}" width = 300px</p>
                                 <p>개봉연도: ${response.movie[0].year}</p>
                                 `);
                         },
