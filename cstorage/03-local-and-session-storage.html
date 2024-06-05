@@ -80,7 +80,34 @@
         })
 
         // SessionStorage Handlers - User Information
+        document.getElementById('saveSessionStorage').addEventListener('click', function(e) {
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
 
+            if (username && email){
+                sessionStorage.setItem('username', username);
+                sessionStorage.setItem('email', email);
+
+                document.getElementById('sessionStorageResult').innerText = `Username은 ${username}이고, email은 ${email}입니다..`;
+            } else{alert('똑바로 입력해주세요오..')}
+        });
+
+        document.getElementById('readSessionStorage').addEventListener('click', event => {
+            const username = sessionStorage.getItem('username');
+            const email = sessionStorage.getItem('email');
+
+            if (username && email){
+                document.getElementById('sessionStorageResult').innerText = `이름은 ${username}이고요,,, 이메일은 ${email}래요오..`;
+            } else{
+                document.getElementById('sessionStorageResult').innerText = '설정을 찾을 수 없어요..';
+            }
+        });
+
+        document.getElementById('deleteSessionStorage').addEventListener('click', function(e){
+            sessionStorage.removeItem('username'); sessionStorage.removeItem('email');
+       
+            document.getElementById('sessionStorageResult').innerText = '설정이 삭제되었어..'
+        })
 
     </script>
 </body>
